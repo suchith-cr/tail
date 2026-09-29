@@ -1,0 +1,27 @@
+{
+  "name": "agrismart-ai-crop-assistant",
+  "version": "1.0.0",
+  "description": "AI-Powered Agriculture Crop Advisory Assistant using Gemini GenAI, Express, React, Tailwind CSS, and Supabase PostgreSQL.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "node backend/server.js",
+    "client": "npm --prefix frontend run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "migrate": "node backend/db/migrate.js",
+    "postinstall": "npm --prefix backend install && npm --prefix frontend install"
+  },
+  "keywords": [
+    "agritech",
+    "gemini",
+    "crop-disease-detection",
+    "weather-alerts",
+    "market-insights",
+    "supabase"
+  ],
+  "author": "AgriSmart Engineering",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

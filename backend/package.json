@@ -1,0 +1,20 @@
+{
+  "name": "agrismart-backend",
+  "version": "1.0.0",
+  "description": "Backend Express API for AgriSmart AI Crop Advisory System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "migrate": "node db/migrate.js"
+  },
+  "dependencies": {
+    "@google/genai": "^0.14.0",
+    "@supabase/supabase-js": "^2.49.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.3",
+    "zod": "^3.24.2"
+  }
+}
