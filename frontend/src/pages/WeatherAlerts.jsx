@@ -15,13 +15,11 @@ export default function WeatherAlerts() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!location.trim()) {
+
       setError('Please enter your farm location (City/District/Region).');
       return;
     }
-
-    setLoading(true);
-    setError(null);
-    setResult(null);
+    "this is a change"
 
     try {
       const res = await getWeatherAdvisory({
@@ -103,11 +101,10 @@ export default function WeatherAlerts() {
             <button
               type="submit"
               disabled={loading}
-              className={`w-full py-4 rounded-xl font-bold text-sm transition-all duration-300 flex items-center justify-center gap-2 shadow-lg ${
-                loading
+              className={`w-full py-4 rounded-xl font-bold text-sm transition-all duration-300 flex items-center justify-center gap-2 shadow-lg ${loading
                   ? 'bg-slate-800 text-slate-500 cursor-not-allowed border border-slate-700'
                   : 'bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-white shadow-amber-950/50 active:scale-[0.99]'
-              }`}
+                }`}
             >
               {loading ? (
                 <>
